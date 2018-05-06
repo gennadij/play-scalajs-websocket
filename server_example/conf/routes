@@ -1,0 +1,12 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET        /                             org.example.play_scala_scalajs_websocket_stateful.controllers.HomeController.index
+GET        /example                        org.example.play_scala_scalajs_websocket_stateful.controllers.HomeController.websocket
+#GET        /                             org.example.play_scala_scalajs_websocket_stateful.controllers.Application.index
+
+# Prefix must match `play.assets.urlPrefix`
+GET        /assets/*file                 controllers.Assets.at(file)
+GET        /versionedAssets/*file        controllers.Assets.versioned(path="/public", file: Asset)
